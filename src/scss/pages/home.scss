@@ -1,0 +1,103 @@
+.skincare-ingredients {
+    margin-top: 50px;
+}
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.filter .card-title,
+.categories .card-title {
+    margin-bottom: 0;
+}
+.card {
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+}
+.card.disabled {
+    cursor: not-allowed;
+    color: grey
+}
+.products .data-container {
+    justify-content: space-between;
+}
+.products .card {
+    width: 100%;
+    margin: 0 0 2%;
+    background: #f5f2ed;
+}
+@media screen and (min-width: 480px) {
+    .products .card {
+        width: 49%;
+        background: #f5f2ed;
+    }
+}
+.products .card-title {
+    font-weight: 700;
+}
+.section-card {
+    margin-bottom: 15px;
+
+    .card-body {
+        background-color: #f5f2ed;
+
+        h5 {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}
+.filter .card {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.filter .card-body {
+    padding: 0 5px 5px;
+    font-size: 20px;
+}
+.clear-filter {
+    color: white;
+    background: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: auto;
+}
+.card.hide {
+    display: none;
+}
+#spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 4px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+.spinner-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: #333;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

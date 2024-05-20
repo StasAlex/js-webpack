@@ -1,0 +1,15 @@
+body {
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+}
+#root {
+    box-sizing: border-box;
+}
+section {
+    margin: 50px 20px;
+}
+.categories h2,
+.filter h2,
+.products h2 {
+    display: none;
+}
